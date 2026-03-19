@@ -66,7 +66,7 @@
                               &trans     &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(z) LG(LS(z)) &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp LG(z) LS(LG(z)) &inc_dec_kp LEFT RIGHT>;
 
         };
 
@@ -104,7 +104,7 @@
 &none              &none            &none            &none            &none            &none            &kp LG(LS(N5))    &kp LG(LS(Q))  &none  &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none    &none  &none  &none  &none  &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LG(LS(LBKT)) LG(LS(RBKT))>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp LS(LG(LBKT)) LS(LG(RBKT))>;
         };
 
         extra1 { status = "reserved"; };
